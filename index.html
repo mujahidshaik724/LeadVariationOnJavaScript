@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>DashBoard 2.0</h2>
+
+  <table id="dashboard">
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Username</th>
+        <th>Switch</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="dashboard-body"></tbody>
+  </table>
+
+  <div class="form-container">
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="text" id="usernameInput" placeholder="Username">
+    <input type="text" id="tempInput" placeholder="Temperature (e.g., 24°C)">
+    <input type="text" id="humidityInput" placeholder="Humidity (e.g., 60%)">
+    <button onclick="addUser()">Add User</button>
+  </div>
+
+  <button id="resetBtn">Reset All</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
